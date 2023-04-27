@@ -135,7 +135,7 @@ class SearchScreen extends StatelessWidget {
                 child: Column(
                   children: [
                     Container(
-                      height: AppLayout.getHeight(190.0),
+                      height: AppLayout.getHeight(180.0),
                       decoration: BoxDecoration(
                         borderRadius:
                             BorderRadius.circular(AppLayout.getHeight(12.0)),
@@ -169,7 +169,7 @@ class SearchScreen extends StatelessWidget {
                           vertical: AppLayout.getHeight(15.0),
                         ),
                         width: size.width * 0.44,
-                        height: AppLayout.getHeight(174.0),
+                        height: AppLayout.getHeight(180.0),
                         decoration: BoxDecoration(
                           color: const Color(0xFF3AB8B8),
                           borderRadius:
@@ -213,6 +213,58 @@ class SearchScreen extends StatelessWidget {
                         ),
                       )
                     ],
+                  ),
+                  SizedBox(
+                    height: AppLayout.getHeight(20.0),
+                  ),
+                  Container(
+                    width: size.width * 0.44,
+                    height: AppLayout.getHeight(200.0),
+                    padding: EdgeInsets.symmetric(
+                      horizontal: AppLayout.getWidth(15.0),
+                      vertical: AppLayout.getHeight(15.0),
+                    ),
+                    decoration: BoxDecoration(
+                      color: const Color(0xFFEC6545),
+                      borderRadius:
+                          BorderRadius.circular(AppLayout.getHeight(18.0)),
+                    ),
+                    child: Column(
+                      children: [
+                        Text(
+                          'Take love',
+                          textAlign: TextAlign.center,
+                          style: Styles.headLineStyle2.copyWith(
+                            color: Colors.white,
+                          ),
+                        ),
+                        SizedBox(
+                          height: AppLayout.getHeight(20.0),
+                        ),
+                        RichText(
+                          text: TextSpan(children: [
+                            TextSpan(
+                              text: '😍',
+                              style: TextStyle(
+                                fontSize: AppLayout.getHeight(38.0),
+                              ),
+                            ),
+                            TextSpan(
+                              text: '🥰',
+                              style: TextStyle(
+                                fontSize: AppLayout.getHeight(50.0),
+                              ),
+                            ),
+                            TextSpan(
+                              text: '😘',
+                              style: TextStyle(
+                                fontSize: AppLayout.getHeight(38.0),
+                              ),
+                            ),
+                          ]),
+                        ),
+                      ],
+                    ),
                   ),
                 ],
               ),
