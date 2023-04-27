@@ -14,9 +14,9 @@ class TicketView extends StatelessWidget {
 
     return SizedBox(
       width: size.width * 0.85,
-      height: 200.0,
+      height: AppLayout.getHeight(200.0),
       child: Container(
-        margin: const EdgeInsets.only(right: 16.0),
+        margin: EdgeInsets.only(right: AppLayout.getWidth(16.0)),
         child: Column(
           children: [
             // Showing Blue part of container

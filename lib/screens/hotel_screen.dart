@@ -17,7 +17,7 @@ class HotelScreen extends StatelessWidget {
       padding: const EdgeInsets.symmetric(horizontal: 15.0, vertical: 17.0),
       margin: const EdgeInsets.only(right: 17.0, top: 5.0),
       width: size.width * 0.6,
-      height: 350,
+      height: AppLayout.getHeight(350.0),
       decoration: BoxDecoration(
           color: Styles.blueColor,
           borderRadius: BorderRadius.circular(24),

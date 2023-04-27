@@ -5,6 +5,8 @@ import 'package:booking_app/utils/app_styles.dart';
 import 'package:fluentui_icons/fluentui_icons.dart';
 import 'package:flutter/material.dart';
 
+import '../widgets/double_text_widget.dart';
+
 class HomeScreen extends StatelessWidget {
   const HomeScreen({Key? key}) : super(key: key);
 
@@ -75,25 +77,9 @@ class HomeScreen extends StatelessWidget {
                 const SizedBox(
                   height: 40.0,
                 ),
-                Row(
-                  mainAxisAlignment: MainAxisAlignment.spaceBetween,
-                  children: [
-                    Text(
-                      'Upcoming Flights',
-                      style: Styles.headLineStyle2,
-                    ),
-                    InkWell(
-                      onTap: () {
-                        debugPrint('Clicked');
-                      },
-                      child: Text(
-                        'View all',
-                        style: Styles.textStyle.copyWith(
-                          color: Styles.primaryColor,
-                        ),
-                      ),
-                    ),
-                  ],
+                const DoubleTextWidget(
+                  headingText: 'Upcoming Flights',
+                  subText: 'View all',
                 ),
               ],
             ),
@@ -115,26 +101,8 @@ class HomeScreen extends StatelessWidget {
           ),
           Container(
             padding: const EdgeInsets.symmetric(horizontal: 20, vertical: 20),
-            child: Row(
-              mainAxisAlignment: MainAxisAlignment.spaceBetween,
-              children: [
-                Text(
-                  'Hotels',
-                  style: Styles.headLineStyle2,
-                ),
-                InkWell(
-                  onTap: () {
-                    debugPrint('Clicked');
-                  },
-                  child: Text(
-                    'View all',
-                    style: Styles.textStyle.copyWith(
-                      color: Styles.primaryColor,
-                    ),
-                  ),
-                ),
-              ],
-            ),
+            child: const DoubleTextWidget(
+                headingText: 'Hotels', subText: 'View all'),
           ),
           SingleChildScrollView(
             scrollDirection: Axis.horizontal,

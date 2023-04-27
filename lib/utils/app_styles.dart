@@ -12,6 +12,7 @@ class Styles {
   static Color orangeColor = const Color(0xFFF37B67);
   static Color searchColor = const Color(0xFFF4F6FD);
   static Color kakiColor = const Color(0xFFD2BDB6);
+  static Color iconsColor = const Color(0xFFBFC2DF);
 
   // Fonts
   static TextStyle textStyle = GoogleFonts.poppins(
